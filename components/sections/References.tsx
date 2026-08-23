@@ -48,7 +48,7 @@ function ProjectTile({
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.15)_0%,rgba(10,10,10,0.05)_35%,rgba(10,10,10,0.85)_100%)]" />
         <div className="absolute inset-0 bg-bronze/10 mix-blend-color transition-opacity duration-700 group-hover:opacity-60" />
-        <span className="absolute right-6 top-6 text-[0.65rem] uppercase tracking-[0.24em] text-bronze-light [text-shadow:0_1px_8px_rgba(0,0,0,0.6)]">
+        <span className="absolute right-6 top-6 rounded-full border border-bronze/30 bg-ink/60 px-3 py-1.5 text-[0.65rem] uppercase tracking-[0.24em] text-bronze-light backdrop-blur-sm">
           {tag}
         </span>
         <div className="absolute inset-x-6 bottom-6 flex items-end justify-between">
