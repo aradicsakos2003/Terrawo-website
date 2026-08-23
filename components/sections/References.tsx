@@ -9,29 +9,15 @@ const PROJECTS = [
     name: "Belváros Penthouse",
     place: "Budapest, V. kerület",
     tag: "Lakóingatlan",
-    span: "md:col-span-7 md:row-span-2",
+    span: "md:col-span-6",
     image: referenceImages.penthouse,
-  },
-  {
-    name: "Villa Lupa",
-    place: "Balatonfüred",
-    tag: "Luxusvilla",
-    span: "md:col-span-5",
-    image: referenceImages.villa,
   },
   {
     name: "Loft Studio 34",
     place: "Budapest, IX. kerület",
     tag: "Bérlemény",
-    span: "md:col-span-5",
+    span: "md:col-span-6",
     image: referenceImages.loft,
-  },
-  {
-    name: "Boutique Suite",
-    place: "Eger, Belváros",
-    tag: "Szálláshely",
-    span: "md:col-span-7",
-    image: referenceImages.suite,
   },
 ];
 
