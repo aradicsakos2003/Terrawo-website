@@ -95,12 +95,18 @@ export function Pricing() {
                       {tier.label}
                     </span>
                   </div>
-                  <div className="md:col-span-3">
+                  <div className="mt-3 md:col-span-3 md:mt-0">
+                    <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-cream/35 md:hidden">
+                      Ingatlanosoknak / cégeknek
+                    </span>
                     <span className="font-display text-xl text-bronze-light md:text-2xl">
                       {tier.corp} Ft
                     </span>
                   </div>
-                  <div className="md:col-span-4">
+                  <div className="mt-2 md:col-span-4 md:mt-0">
+                    <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-cream/35 md:hidden">
+                      Magánszemélyeknek
+                    </span>
                     <span className="text-lg font-light text-cream/60">
                       {tier.priv} Ft
                     </span>
