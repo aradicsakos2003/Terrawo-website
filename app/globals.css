@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  background-color: #0a0a0a;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f6f1e7;
+  font-feature-settings: "ss01" 1, "cv01" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #ad8654;
+  color: #0a0a0a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a332a;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ad8654;
+}
+
+.container-outer {
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.5rem, 5vw, 5rem);
+  padding-right: clamp(1.5rem, 5vw, 5rem);
+}
+
+.eyebrow {
+  font-family: var(--font-manrope);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #ad8654;
+}
+
+.hairline {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(173,134,84,0) 0%, rgba(173,134,84,0.4) 50%, rgba(173,134,84,0) 100%);
+}
+
+.grain-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("/noise.svg");
+  background-size: 200px;
+}
+
+.text-stroke-bronze {
+  -webkit-text-stroke: 1px #ad8654;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
