@@ -11,12 +11,6 @@ const SITEMAP = [
   { href: "#arak", label: "Árak" },
 ];
 
-const SOCIAL = [
-  { href: "https://instagram.com", label: "Instagram" },
-  { href: "https://linkedin.com", label: "LinkedIn" },
-  { href: "https://facebook.com", label: "Facebook" },
-];
-
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -32,7 +26,7 @@ export function Footer() {
           </Link>
         </Reveal>
 
-        <div className="mt-16 grid grid-cols-1 gap-12 border-t border-line py-14 md:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-12 border-t border-line py-14 md:grid-cols-3">
           <div className="md:col-span-2">
             <p className="max-w-sm text-base font-light leading-relaxed text-cream/50">
               Prémium 3D virtuális bejárások Matterport technológiával —
@@ -53,26 +47,6 @@ export function Footer() {
                   >
                     {item.label}
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-[0.65rem] uppercase tracking-[0.24em] text-bronze">
-              Közösség
-            </p>
-            <ul className="mt-5 space-y-3">
-              {SOCIAL.map((item) => (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-sm font-light text-cream/60 transition-colors duration-300 hover:text-bronze-light"
-                  >
-                    {item.label}
-                  </a>
                 </li>
               ))}
             </ul>
