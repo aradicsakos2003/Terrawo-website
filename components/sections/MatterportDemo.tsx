@@ -98,7 +98,7 @@ export function MatterportDemo() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
                   className="absolute inset-0 h-full w-full"
-                  src="https://my.matterport.com/show/?m=ReKKmbfowSX&play=1&brand=0"
+                  src="https://my.matterport.com/show/?m=ReKKmbfowSX&play=1&brand=0&mt=0"
                   title="TERRAVO Matterport 3D bejárás bemutató"
                   allow="xr-spatial-tracking; gyroscope; accelerometer; fullscreen"
                   allowFullScreen
