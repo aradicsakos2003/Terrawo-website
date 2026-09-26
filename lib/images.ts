@@ -53,18 +53,4 @@ export const referenceImages = {
     alt: "Boutique hotelszoba ággyal és fotellel",
     credit: "Yosuke Ota · Unsplash",
   },
-};    url: "https://images.unsplash.com/photo-1714572878219-d0d72a11e998",
-    alt: "Luxusvilla medencével, esti világítással",
-    credit: "Jerry Kavan · Unsplash",
-  },
-  loft: {
-    url: "https://images.unsplash.com/photo-1740446569677-a79c3186a16b",
-    alt: "Ipari stílusú loft látszó téglafallal",
-    credit: "Jonathan Borba · Unsplash",
-  },
-  suite: {
-    url: "https://images.unsplash.com/photo-1664227430717-9a62112984cf",
-    alt: "Boutique hotelszoba ággyal és fotellel",
-    credit: "Yosuke Ota · Unsplash",
-  },
 };
