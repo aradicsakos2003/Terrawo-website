@@ -13,7 +13,7 @@ const PROJECTS = [
     tag: "Lakóingatlan",
     span: "md:col-span-12",
     image: referenceImages.siofok,
-    tourUrl: "https://my.matterport.com/show/?m=joQ3bGtDhZA&play=1&brand=0&mt=0",
+    tourUrl: "https://my.matterport.com/show/?m=HP81KnJb9SS&play=1&brand=0&mt=0",
   },
 ];
 
