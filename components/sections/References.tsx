@@ -6,12 +6,19 @@ import { referenceImages } from "../../lib/images";
 
 const PROJECTS = [
   {
-    name: "Siófok — Beszédes sétány",
+    name: "Siófoki lakás",
     place: "Siófok, Balaton-part",
-    tag: "Élő referencia",
-    span: "md:col-span-12",
+    tag: "Lakóingatlan",
+    span: "md:col-span-6",
     image: referenceImages.siofok,
     tourUrl: "https://my.matterport.com/show/?m=joQ3bGtDhZA&brand=0",
+  },
+  {
+    name: "Belváros Penthouse",
+    place: "Budapest, V. kerület",
+    tag: "Bérlemény",
+    span: "md:col-span-6",
+    image: referenceImages.penthouse,
   },
 ];
 
@@ -33,7 +40,7 @@ function ProjectTile({
   tourUrl?: string;
 }) {
   const content = (
-    <div className="relative aspect-[16/9] w-full overflow-hidden border border-line bg-charcoal-soft md:aspect-[21/9]">
+    <div className="relative aspect-[16/9] w-full overflow-hidden border border-line bg-charcoal-soft">
       <Image
         src={image.url}
         alt={image.alt}
@@ -102,7 +109,7 @@ export function References() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
           {PROJECTS.map((p, i) => (
             <ProjectTile key={p.name} {...p} index={i} />
           ))}
@@ -110,8 +117,8 @@ export function References() {
 
         <Reveal delay={0.3} className="mt-8">
           <p className="text-sm font-light text-cream/35">
-            Ez az első élesben átadott TERRAVO-túránk — a galéria a következő
-            hetekben újabb siófoki és Balaton-parti projektekkel bővül.
+            A galéria a következő hetekben újabb siófoki és Balaton-parti
+            projektekkel bővül.
           </p>
         </Reveal>
       </div>
