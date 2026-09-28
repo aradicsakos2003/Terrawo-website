@@ -36,6 +36,19 @@ const TIERS = [
   },
 ];
 
+const AGENT_TIERS = [
+  { range: "1–2 ingatlan / hó", discount: "Alapár" },
+  { range: "3–4 ingatlan / hó", discount: "-10%" },
+  { range: "5+ ingatlan / hó", discount: "-15%" },
+];
+
+const OFFICE_TIERS = [
+  { range: "1–4 ingatlan / hó", discount: "Alapár" },
+  { range: "5–9 ingatlan / hó", discount: "-10%" },
+  { range: "10–14 ingatlan / hó", discount: "-15%" },
+  { range: "15+ ingatlan / hó", discount: "-20%" },
+];
+
 const FEATURES = [
   "Teljes 3D bejárás",
   "Dollhouse és alaprajz nézet",
@@ -134,6 +147,69 @@ export function Pricing() {
             </Reveal>
           </div>
         </Reveal>
+
+        <Reveal delay={0.2} className="mt-20 md:mt-28">
+          <div className="border-t border-line pt-14 md:pt-20">
+            <p className="eyebrow mb-6">Partnerkedvezmény</p>
+            <h3 className="max-w-xl font-display text-2xl text-cream md:text-3xl">
+              Minél rendszeresebb az
+              <span className="italic text-bronze-light"> együttműködés</span>,
+              annál kedvezőbb az ár.
+            </h3>
+            <p className="mt-6 max-w-2xl text-base font-light leading-relaxed text-cream/60">
+              Az alapár a fenti táblázat "Ingatlanosoknak / cégeknek"
+              oszlopa. Egyéni ingatlanosoknak és irodáknak az adott hónapban
+              teljesített darabszám alapján a következő hónapra
+              partnerkedvezmény jár — nem visszamenőleg. Nincs minimum
+              vállalás: amennyit egy adott hónapban készítünk, annak
+              megfelelő kedvezmény érvényes a következőre.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16">
+          <Reveal delay={0.1}>
+            <p className="mb-5 text-[0.65rem] uppercase tracking-[0.24em] text-bronze">
+              Egyéni ingatlanos
+            </p>
+            <div className="border-t border-line">
+              {AGENT_TIERS.map((t) => (
+                <div
+                  key={t.range}
+                  className="flex items-center justify-between border-b border-line py-4"
+                >
+                  <span className="text-sm font-light text-cream/60">
+                    {t.range}
+                  </span>
+                  <span className="font-display text-lg text-cream md:text-xl">
+                    {t.discount}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.15}>
+            <p className="mb-5 text-[0.65rem] uppercase tracking-[0.24em] text-bronze">
+              Iroda
+            </p>
+            <div className="border-t border-line">
+              {OFFICE_TIERS.map((t) => (
+                <div
+                  key={t.range}
+                  className="flex items-center justify-between border-b border-line py-4"
+                >
+                  <span className="text-sm font-light text-cream/60">
+                    {t.range}
+                  </span>
+                  <span className="font-display text-lg text-cream md:text-xl">
+                    {t.discount}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
 
         <div className="mt-14 grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2">
           {FEATURES.map((f, i) => (
