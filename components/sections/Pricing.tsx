@@ -226,7 +226,8 @@ export function Pricing() {
           <p className="max-w-lg text-sm font-light text-cream/40">
             Az árak indikatívak és nettó összeget jelentenek. Bevezető,
             piacra lépő díjszabás — a pontos ajánlatot helyszíni felmérés
-            után adjuk.
+            után adjuk. Az elkészült felvételeket 1 évig tároljuk, azt
+            követően töröljük.
           </p>
           <CTAButton href="#kapcsolat" variant="solid">
             Ajánlatot kérek
