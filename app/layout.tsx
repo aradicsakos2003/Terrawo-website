@@ -37,12 +37,21 @@ export const metadata: Metadata = {
     siteName: "TERRAVO",
     locale: "hu_HU",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "TERRAVO — Prémium 3D Matterport bejárások a Balaton-parton",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "TERRAVO — Prémium 3D virtuális bejárások",
     description:
       "Professzionális Matterport 3D bejárások ingatlanosoknak, szállodáknak és üzleteknek.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
