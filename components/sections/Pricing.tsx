@@ -226,8 +226,10 @@ export function Pricing() {
           <p className="max-w-lg text-sm font-light text-cream/40">
             Az árak indikatívak és nettó összeget jelentenek. Bevezető,
             piacra lépő díjszabás — a pontos ajánlatot helyszíni felmérés
-            után adjuk. Az elkészült felvételeket 1 évig tároljuk, azt
-            követően töröljük.
+            után adjuk. Az elkészült felvételeket 1 évig díjmentesen tároljuk
+            és tartjuk élesben — az ezt követő időszakról egyedi egyeztetés
+            alapján gondoskodunk. Az ingatlan értékesítését követően a
+            felvételt töröljük.
           </p>
           <CTAButton href="#kapcsolat" variant="solid">
             Ajánlatot kérek
